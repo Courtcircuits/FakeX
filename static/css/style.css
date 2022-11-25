@@ -248,7 +248,7 @@ nav #icons li a svg {
 }
 
 #feed {
-  margin-top: 10px;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -453,10 +453,49 @@ footer a:hover {
 }
 
 #details #grid-size .size-btn{
+  background: transparent;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: 10px;
   margin-bottom: 10px;
   border: solid 1px black;
+  transition: 0.2s linear all;
+}
+
+#details #grid-size .size-btn:hover{
+  background: black;
+  color:#F5F2E9;
+  transition: 0.2s linear backgrond,color;
+}
+
+#details #grid-size .disabled{
+  opacity: 0.5;
+}
+
+#details #grid-size .selected{
+  background: black;
+  color: #F5F2E9;
+}
+
+#details a{
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width:90%;
+  text-align: center;
+  border: 1px solid black;
+  margin-top:20px;
+  font-family: "Space Grotesk", sans-serif;
+  color: black;
+  text-decoration: none;
+  transition: 0.2s linear backgrond,color;
+
+}
+
+#details a:hover{
+  background: black;
+  color: #F5F2E9;
+  transition: 0.2s linear backgrond, color;
+
 }
 /*# sourceMappingURL=style.css.map */
