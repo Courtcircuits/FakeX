@@ -400,13 +400,15 @@ footer a:hover {
 #product{
   display: flex;
   width:100%;
+  height: 100%;
   flex-direction: row;
   border-bottom: 1px solid black;
 }
 
 #product img{
   border-right:1px solid black;
-  height: 70vh;
+  width: 100%;
+
 }
 
 #details{
@@ -478,7 +480,9 @@ footer a:hover {
 }
 
 #details a{
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
   width:90%;
@@ -490,6 +494,10 @@ footer a:hover {
   text-decoration: none;
   transition: 0.2s linear backgrond,color;
 
+}
+
+#details a svg{
+  margin-left: 10px;
 }
 
 #details a:hover{
